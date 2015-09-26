@@ -1,60 +1,21 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\iojs\\node.exe',
-1 verbose cli   'C:\\Program Files\\iojs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'git://github.com/ghostoy/node-serialport.git#nan1to2' ]
-2 info using npm@2.14.3
-3 info using node@v3.3.1
-4 verbose install initial load of C:\Users\Molly\Documents\GitHub\LemonSharkHack\package.json
-5 warn package.json node-ardx@0.0.3 license should be a valid SPDX license expression
-6 verbose installManyTop reading scoped package data from C:\Users\Molly\Documents\GitHub\LemonSharkHack\node_modules\app\package.json
-7 verbose installManyTop reading scoped package data from C:\Users\Molly\Documents\GitHub\LemonSharkHack\node_modules\ejs\package.json
-8 verbose installManyTop reading scoped package data from C:\Users\Molly\Documents\GitHub\LemonSharkHack\node_modules\express\package.json
-9 verbose installManyTop reading scoped package data from C:\Users\Molly\Documents\GitHub\LemonSharkHack\node_modules\johnny-five\package.json
-10 verbose installManyTop reading scoped package data from C:\Users\Molly\Documents\GitHub\LemonSharkHack\node_modules\markedejs\package.json
-11 info package.json markedejs@0.1.0 license should be a valid SPDX license expression
-12 info package.json app@0.1.0 No license field.
-13 info package.json express@3.4.0 No license field.
-14 info package.json johnny-five@0.7.56 No license field.
-15 verbose readDependencies loading dependencies from C:\Users\Molly\Documents\GitHub\LemonSharkHack\package.json
-16 silly cache add args [ 'git://github.com/ghostoy/node-serialport.git#nan1to2', null ]
-17 verbose cache add spec git://github.com/ghostoy/node-serialport.git#nan1to2
-18 silly cache add parsed spec Result {
-18 silly cache add   raw: 'git://github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add   scope: null,
-18 silly cache add   name: null,
-18 silly cache add   rawSpec: 'git://github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add   spec: 'git://github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add   type: 'hosted',
-18 silly cache add   hosted:
-18 silly cache add    { type: 'github',
-18 silly cache add      ssh: 'git@github.com:ghostoy/node-serialport.git#nan1to2',
-18 silly cache add      sshUrl: 'git+ssh://git@github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add      httpsUrl: 'git+https://github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add      gitUrl: 'git://github.com/ghostoy/node-serialport.git#nan1to2',
-18 silly cache add      shortcut: 'github:ghostoy/node-serialport#nan1to2',
-18 silly cache add      directUrl: 'https://raw.githubusercontent.com/ghostoy/node-serialport/nan1to2/package.json' } }
-19 verbose addRemoteGit caching git://github.com/ghostoy/node-serialport.git#nan1to2
-20 verbose addRemoteGit git://github.com/ghostoy/node-serialport.git#nan1to2 is a repository hosted by github
-21 silly tryClone cloning git://github.com/ghostoy/node-serialport.git#nan1to2 via git://github.com/ghostoy/node-serialport.git#nan1to2
-22 verbose tryClone git-github-com-ghostoy-node-serialport-git-5bedc566 not in flight; caching
-23 verbose makeDirectory C:\Users\Molly\AppData\Roaming\npm-cache\_git-remotes creation not in flight; initializing
-24 verbose makeCacheDir UID & GID are irrelevant on win32
-25 error git clone --template=C:\Users\Molly\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/ghostoy/node-serialport.git C:\Users\Molly\AppData\Roaming\npm-cache\_git-remotes\git-github-com-ghostoy-node-serialport-git-5bedc566: undefined
-25 error git clone --template=C:\Users\Molly\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/ghostoy/node-serialport.git C:\Users\Molly\AppData\Roaming\npm-cache\_git-remotes\git-github-com-ghostoy-node-serialport-git-5bedc566: undefined
-26 verbose stack Error: not found: git
-26 verbose stack     at F (C:\Program Files\iojs\node_modules\npm\node_modules\which\which.js:72:28)
-26 verbose stack     at E (C:\Program Files\iojs\node_modules\npm\node_modules\which\which.js:75:29)
-26 verbose stack     at C:\Program Files\iojs\node_modules\npm\node_modules\which\which.js:83:16
-26 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
-27 verbose cwd C:\Users\Molly\Documents\GitHub\LemonSharkHack
-28 error Windows_NT 6.1.7601
-29 error argv "C:\\Program Files\\iojs\\node.exe" "C:\\Program Files\\iojs\\node_modules\\npm\\bin\\npm-cli.js" "install" "git://github.com/ghostoy/node-serialport.git#nan1to2"
-30 error node v3.3.1
-31 error npm  v2.14.3
-32 error code ENOGIT
-33 error not found: git
-34 error Failed using git.
-34 error This is most likely not a problem with npm itself.
-34 error Please check if you have git installed and in your PATH.
-35 verbose exit [ 1, true ]
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'serialport' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 error Error: ENOENT, stat 'C:\Users\aizax94\AppData\Roaming\npm'
+6 error If you need help, you may report this *entire* log,
+6 error including the npm and node versions, at:
+6 error     <http://github.com/npm/npm/issues>
+7 error System Windows_NT 6.2.9200
+8 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "serialport"
+9 error cwd C:\Users\aizax94\Documents\GitHub\LemonSharkHack
+10 error node -v v0.10.38
+11 error npm -v 1.4.28
+12 error path C:\Users\aizax94\AppData\Roaming\npm
+13 error code ENOENT
+14 error errno 34
+15 verbose exit [ 34, true ]

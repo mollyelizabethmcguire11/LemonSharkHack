@@ -9,7 +9,7 @@ body{
       margin: 0 0 0 0;
       padding: 0;
       background-color: #F7931D;
-      
+
       position: absolute;
       z-index: 1;
 }
@@ -19,32 +19,33 @@ body{
 	font-size: 7em;
 	color: #383B4C;
 	text-align: center;
-	
+
 	margin-top: 2%;
 }
 
 .lemon-hack{
 	max-width: 300px;
-	
+
 	position: relative;
 	z-index: 4;
-	
-	
 }
 
+.hide{
+	display: none;
+}
 
 
 .weather{
 	font-family: "bebas-regular", helvetica, "sans serif";
 	font-size: 3em;
 	color: #383B4C;
-	
+
 margin-top: -13%;
 margin-left: 60%;
 }
 
 .twitter{
-	position: relative; 
+	position: relative;
 	margin-top: 8%;
 	text-align: center;
 }
