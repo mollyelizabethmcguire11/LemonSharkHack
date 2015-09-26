@@ -31,5 +31,22 @@ http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-//require('code/CIRC07-code-button');
-//rec.params.temperature
+
+var five = require("johnny-five"),
+    onButton, offButton, led;
+	five.Board().on("ready", function() {
+	  onButton = new five.Button(2);
+	  offButton = new five.Button(3);
+	  led = new five.Led(13);
+
+	  onButton.on("down", function(value){
+		global.name = Math.random()
+		led.on();
+	  });
+
+	  offButton.on("down", function(){
+	  led.off();
+	  
+	});
+});
+

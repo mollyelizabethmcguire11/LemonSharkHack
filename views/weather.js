@@ -2,12 +2,12 @@ $(document).ready(function() {
 
 		var hash = {
 		'sunny':['sun', 'bright', 'clear', 'sunny', 'clear skies'],
-		'cloudy':['overcast','cloudy','foggy','gray','grey', 'partly cloudy', 'mostly cloudy'],
-		'rainy':['rain', 'wet', 'pouring', 'downpour', 'drizzle', 'shower', 'showers', 'scattered'],
-		'snowy': ['snow', 'sleet', 'hail', 'ice', 'flurries'],
+		'cloudy':['overcast','cloudy','foggy','gray','grey', 'mostly', 'partly'],
+		'rainy':['rain', 'wet', 'pouring', 'downpour', 'drizzle', 'showers', 'scattered'],
+		'snowy': ['heavy', 'snow', 'sleet', 'hail', 'ice', 'flurries'],
 		'fair':[]
 		}
-		
+
 	function set_weather_picture(weather){
 		console.log(weather);
 		if (hash['sunny'].indexOf(weather.toLowerCase()) >= 0) {
@@ -22,9 +22,10 @@ $(document).ready(function() {
 			$('img.weather-image').attr('src','./images/general.png');
 		}
 	};
-		
+
+function look_up_weather(location){
   $.simpleWeather({
-    location: 'Moscow, RU',
+    location: location,
     woeid: '',
     unit: 'f',
     success: function(weather) {
@@ -33,7 +34,7 @@ $(document).ready(function() {
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
 
-	set_weather_picture(weather.currently);
+			set_weather_picture(weather.currently);
 
       $("#weather").html(html);
     },
@@ -41,4 +42,13 @@ $(document).ready(function() {
       $("#weather").html('<p>'+error+'</p>');
     }
   });
+}
+
+	look_up_weather("New York,NY")
+
+	$("button").on("click",function(){
+		var location = $("#city").val() + "," + $("#region").val();
+		look_up_weather(location)
+	})
+
 });
