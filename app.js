@@ -37,11 +37,12 @@ var five = require("johnny-five"),
 	  led = new five.Led(13);
 
 	  onButton.on("down", function(value){
-		global.name = Math.random()
+		global.name = true;
 		led.on();
 	  });
 
 	  offButton.on("down", function(){
+		  global.name = false;
 	  led.off();
 	  
 	});
