@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 		var hash = {
 		'sunny':['sun', 'bright', 'clear', 'sunny', 'clear skies'],
-		'cloudy':['overcast','cloudy','foggy','gray','grey', 'mostly', 'partly'],
-		'rainy':['rain', 'wet', 'pouring', 'downpour', 'drizzle', 'showers', 'scattered'],
-		'snowy': ['heavy', 'snow', 'sleet', 'hail', 'ice', 'flurries'],
+		'cloudy':['overcast','cloudy','foggy','gray','grey', 'partly cloudy', 'mostly cloudy'],
+		'rainy':['rain', 'wet', 'pouring', 'downpour', 'drizzle', 'shower', 'showers', 'scattered'],
+		'snowy': ['snow', 'sleet', 'hail', 'ice', 'flurries'],
 		'fair':[]
 		}
 
