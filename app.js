@@ -26,7 +26,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.intro);
 app.get('/api/gettemp', routes.temprequest);
-app.get('/api/sendtemp', routes.computertoarduino)
+app.post('/api/sendtemp', routes.computertoarduino)
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
@@ -34,22 +34,33 @@ http.createServer(app).listen(app.get('port'), function(){
 var five = require("johnny-five"),
     onButton, offButton, led;
 
-	global.board=five.Board()
-	global.board.on("ready", function() {
-	  onButton = new five.Button(2);
-	  offButton = new five.Button(3);
-	  led = new five.Led(13);
 
-	  onButton.on("down", function(value){
+five.Board().on("ready", function() {
+	onButton = new five.Button(2);
+	offButton = new five.Button(3);
+	led = new five.Led(13);
+
+	onButton.on("down", function(value){
 		global.name = true;
 		led.on();
-	  });
-
-	  offButton.on("down", function(){
-		  global.name = false;
-	  led.off();
-	  
 	});
+
+	offButton.on("down", function(){
+		global.name = false;
+		led.off();
+	});
+	
+	if (!global.anode) {
+	
+		global.anode = new five.Led.RGB({
+			pins: {
+				red: 9,
+				green: 10,
+				blue: 11
+			},
+			isAnode: true
+		});
+	}
 });
 
 

@@ -1,27 +1,17 @@
 
 exports.computertoarduino = function(req, res){
-	console.log (req.params.temperature)
-	var response = {
-		compcomm: global.compin
-	}
+	var temp = req.params.temperature;
+	var color = '#0000FF';
 	
-	global.board.on("ready", function() {
-	  var myLed = new j5.Led.RGB({
-		  pins: {
-			  red: 9,
-			  green: 10,
-			  blue: 11
-		  },
-		  isAnode: true
-	  });
-	  
-	  this.repl.inject({
-		anode: myLed
-	});
-	anode.on()
-	anode.color('#ff0000')
+	if (temp > 80) {
+		color = '#FFCC00'
+	}
+	if (temp > 90) {
+		color = '#FF0000'
+	}
 
-	});
+	  
+	global.anode.color(color)
 	res.json({})
 }
 
