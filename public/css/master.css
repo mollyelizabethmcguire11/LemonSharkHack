@@ -1,0 +1,38 @@
+body{
+	background-color: #FFF8FF;
+}
+
+
+.what-weather{
+	font-family: "bebas-regular", helvetica, "sans serif";
+	font-size: 7em;
+	color: #383B4C;
+	text-align: center;
+	
+	position: relative;
+	top: 50%;
+}
+
+.lemon-hack{
+	max-width: 250px;
+	 	
+	position: relative;
+	top: 5%;
+	left: 1%;
+}
+
+.weather-image{
+	position: relative;
+	bottom: 56%;
+	left: 30%;
+}
+
+.weather{
+	font-family: "bebas-regular", helvetica, "sans serif";
+	font-size: 3em;
+	color: #383B4C;
+	
+	position: absolute;
+	top: 35%;
+	left: 60%;
+}

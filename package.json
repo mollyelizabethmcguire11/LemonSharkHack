@@ -1,0 +1,52 @@
+{
+  "name": "node-ardx",
+  "description": "Exercises for exploring the Arduino Experimenter's kit using johnny-five",
+  "version": "0.0.3",
+  "homepage": "http://node-ardx.org/",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "arduino",
+    "tutorial",
+    "workshop"
+  ],
+  "author": {
+    "name": "Anna Gerber"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AnnaGerber/node-ardx.git"
+  },
+  "bugs": {
+    "url": "http://github.com/AnnaGerber/node-ardx/issues"
+  },
+  "license": "CC-BY-SA",
+  "dependencies": {
+    "express": "3.4.0",
+    "johnny-five": "~0.7.3",
+    "markedejs": "0.1.0",
+    "ejs": "*",
+    "app": "*"
+  },
+  "_id": "node-ardx@0.0.3",
+  "_shasum": "ce493b3456ac3f0e3341421067ab3df10fefb9a5",
+  "_from": "node-ardx@*",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "annagerber",
+    "email": "anna.m.gerber@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "annagerber",
+      "email": "anna.m.gerber@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ce493b3456ac3f0e3341421067ab3df10fefb9a5",
+    "tarball": "http://registry.npmjs.org/node-ardx/-/node-ardx-0.0.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/node-ardx/-/node-ardx-0.0.3.tgz"
+}
