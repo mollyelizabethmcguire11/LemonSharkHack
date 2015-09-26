@@ -16,9 +16,21 @@
 			<img class="lemon-hack" src="./images/lemonhack.png">
 
 			<p class="what-weather">What's the weather?</p>
+			<br>
+			<div class=location-form>
+			<fieldset>
+				<legend class="change-location"> Change Location: </legend>
+				<br>
+					City: <input type = "text" id = "city" value =""> &nbsp; &nbsp; &nbsp;
+					US State/Country: <input type = "text" id = "region" value ="">
+				<button>
+					Submit
+				</button>
+			</fieldset>
+		</div>
 
 			<div id="weather-wrapper" class="hide">
-				<img class="weather-image" src="./images/sunny.png">
+
 
 				<div class="weather">
 					<script src="js/jquery-2.1.4.min.js"></script>
@@ -26,16 +38,7 @@
 					<script src="js/weather.js"></script>
 					<div id="weather"></div>
 
-					<div class=location-form>
-					<fieldset>
-						<legend> Change Location: </legend>
-							City: <input type = "text" id = "city" value ="">
-							US State/Country: <input type = "text" id = "region" value ="">
-						<button>
-							Submit
-						</button>
-					</fieldset>
-				</div>
+
 
 				</div>
 				<div class="twitter">
