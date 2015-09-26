@@ -37,6 +37,11 @@ function look_up_weather(location){
 			set_weather_picture(weather.currently);
 
       $("#weather").html(html);
+			$.ajax({
+				url: "/api/sendtemp",
+				data: { temperature: weather.temp},
+				method: "post"
+			})
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
@@ -66,6 +71,7 @@ function get_temp(){
 		url:"/api/gettemp",
 		success: temp_r_listener
 	});
+
 }
 
 function poll(){

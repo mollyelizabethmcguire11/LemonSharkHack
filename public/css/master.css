@@ -51,7 +51,15 @@ margin-left: 60%;
 }
 
 .location-form {
-  font-family: "century gothic", "arial", "sans-serif";
+  font-family: "bebas-regular", "arial", "sans-serif";
+	font-size: 16px;
+	text-align: center:
+	margin-top: -70%;
+	margin-left: 30%;
   position: absolute;
-  top: 50%;
+
+}
+
+.change-location{
+	font-size: 2em;
 }
