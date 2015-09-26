@@ -26,15 +26,16 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.intro);
 app.get('/api/gettemp', routes.temprequest);
-app.post('/api/sendtemp', routes.computertoarduino)
+app.get('/api/sendtemp', routes.computertoarduino)
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-
 var five = require("johnny-five"),
     onButton, offButton, led;
-	five.Board().on("ready", function() {
+
+	global.board=five.Board()
+	global.board.on("ready", function() {
 	  onButton = new five.Button(2);
 	  offButton = new five.Button(3);
 	  led = new five.Led(13);
@@ -50,4 +51,6 @@ var five = require("johnny-five"),
 	  
 	});
 });
+
+
 
