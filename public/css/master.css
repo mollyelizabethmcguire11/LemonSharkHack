@@ -32,11 +32,7 @@ body{
 	
 }
 
-.weather-image{
-	position: relative;
-	bottom: 56%;
-	left: 30%;
-}
+
 
 .weather{
 	font-family: "bebas-regular", helvetica, "sans serif";
@@ -49,8 +45,8 @@ margin-left: 60%;
 
 .twitter{
 	position: relative; 
-	margin-top: 20%;
-	margin-right: 35%;
+	margin-top: 8%;
+	text-align: center;
 }
 
 .location-form {
