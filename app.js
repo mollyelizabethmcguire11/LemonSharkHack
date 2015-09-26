@@ -28,3 +28,18 @@ http.createServer(app).listen(app.get('port'), function(){
 });
 
 //require('code/CIRC07-code-button');
+var five = require("johnny-five"),
+    onButton, offButton, led;
+	five.Board().on("ready", function() {
+	  onButton = new five.Button(2);
+	  led = new five.Led(13);
+
+	  onButton.on("down", function(value){
+		led.on();
+	  });
+
+	  offButton = new five.Button(3);
+		offButton.on("down", function(){
+	  led.off();
+	});
+});
