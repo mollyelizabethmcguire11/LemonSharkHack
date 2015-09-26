@@ -1,6 +1,6 @@
 
 exports.computertoarduino = function(req, res){
-	var temp = req.params.temperature;
+	var temp = req.body.temperature;
 	var color = '#0000FF';
 	
 	if (temp > 80) {

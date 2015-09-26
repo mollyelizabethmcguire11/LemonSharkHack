@@ -41,11 +41,13 @@ five.Board().on("ready", function() {
 	led = new five.Led(13);
 
 	onButton.on("down", function(value){
+		console.log('pressed on')
 		global.name = true;
 		led.on();
 	});
 
 	offButton.on("down", function(){
+		console.log('pressed off')
 		global.name = false;
 		led.off();
 	});
