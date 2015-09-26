@@ -3,7 +3,7 @@
 
 exports.temprequest = function(req, res){
 	var response = {
-		temperature: 68
+		temperature: global.name
 	}
 	res.json(response)
 }

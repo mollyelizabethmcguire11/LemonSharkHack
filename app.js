@@ -4,6 +4,8 @@ var http = require('http');
 var path = require('path');
 
 var app = express();
+global.name = 'input';
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -22,7 +24,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.intro);
-
+app.get('/api/gettemp', routes.temprequest);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
