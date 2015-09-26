@@ -52,3 +52,9 @@ margin-left: 60%;
 	margin-top: 20%;
 	margin-right: 35%;
 }
+
+.location-form {
+  font-family: "century gothic", "arial", "sans-serif";
+  position: absolute;
+  top: 50%;
+}
