@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 
 		<title>Lemon | Weather</title>
-	
+
 		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
 		<link rel="stylesheet" href="css/master.css" type="text/css"/>
 		<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
@@ -12,14 +12,14 @@
 	</head>
 
 		<body>
-					
+
 				<img class="lemon-hack" src="./images/lemonhack.png">
 
 			<p class="what-weather">What's the weather?</p>
-			
-	
+
+
 			<img class="weather-image" src="./images/sunny.png">
-			
+
 			<div class="weather">
 				<script src="js/jquery-2.1.4.min.js"></script>
 				<script src="js/jquery.simpleWeather.js"></script>
@@ -27,7 +27,16 @@
 				<div id="weather"></div>
 			</div>
 
-			
+			<div class=location-form>
+				<fieldset>
+					<legend> Change Location: </legend>
+						City: <input type = "text" id = "city" value ="">
+						US State/Country: <input type = "text" id = "region" value ="">
+					<button>
+						Submit
+					</button>
+				</fieldset>
+			</div>
 
 		</body>
 
